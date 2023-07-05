@@ -1,0 +1,21 @@
+# Development
+
+## Building development environment
+
+```
+gem install jekyll bundler
+git clone ... formlang_help
+cd formlang_help
+```
+
+## Local development
+
+```
+bundle exec jekyll serve
+```
+
+# Deployment
+
+
+
+
