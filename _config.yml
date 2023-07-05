@@ -28,6 +28,9 @@ timezone: CET
 # Build settings
 markdown: kramdown
 
+# Additional folders and collections
+include: ['_pages']
+
 # Exclude from processing.
 exclude:
   - LICENSE
