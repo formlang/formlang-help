@@ -11,15 +11,19 @@ permalink: /start/index.html
             <a class="btn btn-sm btn-bd-light rounded-2" href="#" title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub
             </a>
         </div>
-        <h1 class="bd-title mb-0" id="content">Get started with <span class="fw-bold text-primary-emphasis">FormLang</span></h1>
+        <h1 class="bd-title" id="content">Get started with {{ site.formLangBrand }}</h1>
     </div>
     <p class="bd-lead">
-        <span class="fw-bold text-primary-emphasis">FormLang</span>
-        is a powerful form design system that helps businesses, families, and individuals create customizable and shareable forms. It is portable, expressive, reusable, and community-supported.
+        {{ site.formLangBrand }}
+        is a powerful form design system that helps businesses,
+        families, and individuals create customizable and shareable
+        forms. It is portable, expressive, reusable, and
+        community-supported.
     </p>
 
     <p>
-        FormLang is designed to streamline operations and enhance
+        {{ site.formLangBrand }}
+        is designed to streamline operations and enhance
         productivity for organizations. It provides a variety of
         features for both organization administrators and employees.
         Please refer to the guides fitting your needs.
@@ -28,22 +32,22 @@ permalink: /start/index.html
     <a class="d-block text-decoration-none mb-3" href="#quick-start-for-admin">
         <strong class="d-block h5 mb-0">Organization Administrators </strong>
         <span class="text-secondary">
-            With FormLang, you can create and manage forms, automate
-            workflows, and collect data from employees, visitors, and
-            anonymous users. FormLang is easy to use and scalable,
-            making it a great choice for organizations of all sizes.
-            Click to learn about how to create your organization
-            account. 
+            With {{ site.formLangBrand }}, you can create and manage
+            forms, automate workflows, and collect data from
+            employees, visitors, and anonymous users. FormLang is easy
+            to use and scalable, making it a great choice for
+            organizations of all sizes.  Click to learn about how to
+            create your organization account. 
         </span>
     </a>            
 
     <a class="d-block text-decoration-none" href="#quick-start-for-employees">
         <strong class="d-block h5 mb-0">Employees</strong>
         <span class="text-secondary">
-            Employees can use FormLang to find out the available
-            forms, form flows, and/or workflows, submit and view their
-            responses to these crafts. Click to learn about how to
-            join your organization.
+            Employees can use {{ site.formLangBrand }} to find out the
+            available forms, form flows, and/or workflows, submit and
+            view their responses to these crafts. Click to learn about
+            how to join your organization.
         </span>
     </a>            
 
@@ -75,18 +79,17 @@ permalink: /start/index.html
     
     <!-- Organizations -->
     <h2 id="quick-start-for-org">
-        Quick start for organizations <a class="anchor-link" href="#quick-start-for-org" aria-label="Link to this section: Quick start"></a>
+        Quick start for organizations <a class="anchor-link" href="#quick-start-for-org" aria-label="Link to this section: Quick start for organizations"></a>
     </h2>
     <p>
         Creating your organization account.
     </p>
-    <br>
     <ol>
         <li>
-            Visit the <a href="https://portal.formlang.com/Account/Register"><span class="fw-bold text-primary-emphasis">FormLang</span> Portal</a>.
+            Visit the <a href="{{ site.link4OrgAccountRegister }}"> {{ site.formLangBrand }} Portal</a>.
         </li>
         <li>
-            Click the <a href="https://test-portal.formlang.com/Account/Register">Register link</a> at the bottom of the page.
+            Click the <a href="{{ site.link4OrgAccountRegister }}">Register link</a> at the bottom of the page.
         </li>
         <li>
             On the <em>Create your organization account</em> page, follow the instruction to enter the required information.
@@ -99,19 +102,40 @@ permalink: /start/index.html
             Click on the activation link in the email.
         </li>
         <li>
-            You will be taken to the <span class="fw-bold text-primary-emphasis">FormLang</span> Portal. Your
+            You will be taken to the {{ site.formLangBrand }} Portal. Your
             organization account will be ready.
         </li>
     </ol>
 
     <!-- Employees -->
     <h2 id="quick-start-for-employees">
-        Quick start for employees <a class="anchor-link" href="#quick-start-for-employees" aria-label="Link to this section: Quick start"></a>
+        Quick start for employees <a class="anchor-link" href="#quick-start-for-employees" aria-label="Link to this section: Quick start for employees"></a>
     </h2>
     <p>
-        Joining your organization.
+        There are two ways to join your organization:        
     </p>
-    
-    
+    <ul>
+        <li>
+            <h5>The administrator creates the account for you.</h5>
+            In this case, you will receive the emails about your account.
+        </li>
+        <li>
+            <h5>you join your organization via the <a href="{{ site.link4MemberRegister }}">member registration link</a></h5>.
+            To join your organization, please follow the general instructions below: 
+            <ol>
+                <li>
+                    First, the system will ask for your organization name. Please contact your administrator for the organization name.
+                    (The system will remember your organization information in your browser.)
+                </li>
+                <li>
+                    Next, the system will ask for your personal information, including your name, email, and password.
+                    Once you submit the personal information, you account will be created.                    
+                </li>
+                <li>
+                    Then, you may receive an email including the activation/confirmation link to your account.
+                    Please use the link to confirm your email and/or activate your account.
+                </li>
+            </ol>
+        </li>
+    </ul>
 </div>
-

@@ -25,6 +25,12 @@ url: "https://help.formlang.com"
 
 timezone: CET
 
+# gloabl variables
+formLangBrand: <span class="fw-bold text-primary-emphasis">FormLang</span>
+
+link4OrgAccountRegister: https://test-portal.formlang.com/Account/Register
+link4MemberRegister: https://test-portal.formlang.com/Account/MemberRegister
+
 # Build settings
 markdown: kramdown
 
