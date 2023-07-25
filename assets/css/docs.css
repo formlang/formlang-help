@@ -624,7 +624,7 @@
     z-index: -1;
     display: block;
     content: "";
-    background-image: linear-gradient(rgba(var(--bd-white-rgb), 1), rgba(var(--bd-white-rgb), 0.95))
+    background-image: linear-gradient(rgba(var(--bd-primary-rgb), 1), rgba(var(--bd-primary-rgb), 0.95))
 }
 
 @media (max-width: 991.98px) {
