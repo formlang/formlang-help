@@ -583,16 +583,20 @@
 }
 
 :root,[data-bs-theme="light"] {
+    --bd-primary: #0d6efd;    
     --bd-purple: #4c0bce;
     --bd-violet: #712cf9;
     --bd-accent: #ffe484;
+    --bd-primary-rgb: 13, 110, 253;    
     --bd-violet-rgb: 112.520718,44.062154,249.437846;
     --bd-accent-rgb: 255,228,132;
+    --bd-white-rgb: 255, 255, 255;    
     --bd-pink-rgb: 214,51,132;
     --bd-teal-rgb: 32,201,151;
+    --bd-primary-bg: var(--bd-primary);    
     --bd-violet-bg: var(--bd-violet);
-    --bd-toc-color: var(--bd-violet);
-    --bd-sidebar-link-bg: rgba(var(--bd-violet-rgb), .1);
+    --bd-toc-color: var(--bd-primary);
+    --bd-sidebar-link-bg: rgba(var(--bd-primary-rgb), .1);
     --bd-callout-link: 10,88,202;
     --bd-callout-code-color: #ab296a;
     --bd-pre-bg: var(--bs-tertiary-bg)
@@ -620,7 +624,7 @@
     z-index: -1;
     display: block;
     content: "";
-    background-image: linear-gradient(rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95))
+    background-image: linear-gradient(rgba(var(--bd-white-rgb), 1), rgba(var(--bd-white-rgb), 0.95))
 }
 
 @media (max-width: 991.98px) {
@@ -684,7 +688,7 @@
 }
 
 .bd-navbar .offcanvas-lg {
-    background-color: var(--bd-violet-bg);
+    background-color: var(--bd-primary-bg);
     border-left: 0
 }
 
@@ -702,8 +706,8 @@
     --bs-dropdown-min-width: 12rem;
     --bs-dropdown-padding-x: .25rem;
     --bs-dropdown-padding-y: .25rem;
-    --bs-dropdown-link-hover-bg: rgba(var(--bd-violet-rgb), .1);
-    --bs-dropdown-link-active-bg: rgba(var(--bd-violet-rgb), 1);
+    --bs-dropdown-link-hover-bg: rgba(var(--bd-primary-rgb), .1);
+    --bs-dropdown-link-active-bg: rgba(var(--bd-primary-rgb), 1);
     --bs-dropdown-font-size: .875rem;
     font-size: .875rem;
     border-radius: .5rem;
@@ -739,8 +743,8 @@
 }
 
 :root {
-    --docsearch-primary-color: var(--bd-violet);
-    --docsearch-logo-color: var(--bd-violet)
+    --docsearch-primary-color: var(--bd-primary);
+    --docsearch-logo-color: var(--bd-primary)
 }
 
 [data-bs-theme="dark"] {
@@ -907,7 +911,7 @@
 .bd-masthead {
     --bd-pink-rgb: 214,51,132;
     padding: 3rem 0;
-    background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%)
+    background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%)
 }
 
 .bd-masthead h1 {
@@ -1406,13 +1410,13 @@
     }
 
     .bd-toc-toggle:hover,.bd-toc-toggle:focus,.bd-toc-toggle:active,.bd-toc-toggle[aria-expanded="true"] {
-        color: var(--bd-violet);
+        color: var(--bd-primary);
         background-color: var(--bs-body-bg);
-        border-color: var(--bd-violet)
+        border-color: var(--bd-primary)
     }
 
     .bd-toc-toggle:focus,.bd-toc-toggle[aria-expanded="true"] {
-        box-shadow: 0 0 0 3px rgba(var(--bd-violet-rgb), 0.25)
+        box-shadow: 0 0 0 3px rgba(var(--bd-primary-rgb), 0.25)
     }
 }
 
@@ -1543,8 +1547,8 @@
 .bd-example-row [class^="col"],.bd-example-cols [class^="col"]>*,.bd-example-cssgrid [class*="grid"]>* {
     padding-top: .75rem;
     padding-bottom: .75rem;
-    background-color: rgba(var(--bd-violet-rgb), 0.15);
-    border: 1px solid rgba(var(--bd-violet-rgb), 0.3)
+    background-color: rgba(var(--bd-primary-rgb), 0.15);
+    border: 1px solid rgba(var(--bd-primary-rgb), 0.3)
 }
 
 .bd-example-row .row+.row,.bd-example-cssgrid .grid+.grid {
@@ -1553,12 +1557,12 @@
 
 .bd-example-row-flex-cols .row {
     min-height: 10rem;
-    background-color: rgba(var(--bd-violet-rgb), 0.15)
+    background-color: rgba(var(--bd-primary-rgb), 0.15)
 }
 
 .bd-example-flex div:not(.vr) {
-    background-color: rgba(var(--bd-violet-rgb), 0.15);
-    border: 1px solid rgba(var(--bd-violet-rgb), 0.3)
+    background-color: rgba(var(--bd-primary-rgb), 0.15);
+    border: 1px solid rgba(var(--bd-primary-rgb), 0.3)
 }
 
 .example-container {
@@ -1693,7 +1697,7 @@
 }
 
 .simple-list-example-scrollspy .active {
-    background-color: rgba(var(--bd-violet-rgb), 0.15)
+    background-color: rgba(var(--bd-primary-rgb), 0.15)
 }
 
 .bd-example-border-utils [class^="border"] {
@@ -1747,7 +1751,7 @@
 
 .bd-example-zindex-levels>div {
     color: var(--bs-body-bg);
-    background-color: var(--bd-violet);
+    background-color: var(--bd-primary);
     border: 1px solid var(--bd-purple)
 }
 
@@ -1835,12 +1839,12 @@
 .btn-bd-primary {
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-bg: var(--bd-primary-bg);
+    --bs-btn-border-color: var(--bd-primary-bg);
     --bs-btn-hover-color: var(--bs-white);
     --bs-btn-hover-bg: #6528e0;
     --bs-btn-hover-border-color: #6528e0;
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-focus-shadow-rgb: var(--bd-primary-rgb);
     --bs-btn-active-color: var(--bs-btn-hover-color);
     --bs-btn-active-bg: #5a23c8;
     --bs-btn-active-border-color: #5a23c8
@@ -1869,7 +1873,7 @@
     --bs-btn-active-bg: var(--bs-white);
     --bs-btn-active-border-color: var(--btn-custom-color);
     --bs-btn-focus-border-color: var(--btn-custom-color);
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb)
+    --bs-btn-focus-shadow-rgb: var(--bd-primary-rgb)
 }
 
 .bd-btn-lg {
