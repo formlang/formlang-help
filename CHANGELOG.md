@@ -1,3 +1,6 @@
+## 0.2.0 (October 04, 2023)
+  - Documented system settings
+
 ## 0.1.0 (October 03, 2023)
   - Updated theme
   - Updated theme
