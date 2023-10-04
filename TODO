@@ -1,0 +1,10 @@
+-*- mode: org; -*-
+* TODO v0.1.0
+  - [ ] Settings
+    - [ ] Logo upload
+    - [ ] User management
+    - [ ] Security
+    - [ ] Email
+* TODO Get started page
+  - [X] Set up the page
+  - [X] Define toc
