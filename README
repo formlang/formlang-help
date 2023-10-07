@@ -1,4 +1,4 @@
-# Development
+# Development on MacOS
 
 ## Building development environment
 
@@ -8,13 +8,36 @@ git clone ... formlang_help
 cd formlang_help
 ```
 
-## Local development
+## Local development 
 
 ```
 bundle exec jekyll serve
 ```
 
+# Development on Windows 11
+
+We use the windows linux subsystem for setting up the development
+environment.
+
+## Building development environment
+
+Step 1: Install windows linux subsystem
+
+Step 2: Install ubuntu (no password)
+
+
+## Local development
+
+We do not use the Linux file system for managing the project. Instead,
+we use the Windows file system to do this job. However, we use the
+Linux subsystem to run the local server. A minor issue of doing so is
+that the local server will not detect the changes of the file content
+automatically.
+
+
 # Deployment
+
+
 
 
 
