@@ -1,4 +1,23 @@
 -*- mode: org; -*-
+* TODO v0.2.0
+  - [ ] Events and schedulers
+    - [ ] Overview
+      - [ ] Events 
+      - [ ] Subscriptions
+      - [ ] Actions
+        - [ ] Send emails
+        - [ ] Send SMS
+    - [ ] Account changes
+      - [ ] When a user joins the organization
+      - [ ] When a member activates his/her account
+      - [ ] When the administrator approves a member's account
+      - [ ] When a member is deactived
+      - [ ] When the administrator creates a member
+    - [ ] Scheduled messages
+    - [ ] Forms
+    - [ ] Form flows
+    - [ ] Workflows
+
 * TODO v0.1.0
   - [X] Settings
     - [X] Logo upload
