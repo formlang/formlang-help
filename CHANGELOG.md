@@ -1,3 +1,13 @@
+## 0.3.0 (October 10, 2023)
+  - Refine events and subscriptions
+  - todo
+  - todo
+  - Overview for the events and subscriptions
+  - In middle of notifications
+  - todo
+  - Readme
+  - todo
+
 ## 0.2.0 (October 04, 2023)
   - Documented system settings
 
