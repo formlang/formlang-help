@@ -4,7 +4,7 @@
 
 * TODO form flows
 
-* TODO forms
+* TODO v0.3.0 (forms)
   - [ ] Design forms
     - [ ] Overview
     - [ ] Create a form
@@ -26,20 +26,20 @@
       - [ ] Actions (maybe not)
         - [ ] Send emails
         - [ ] Send SMS
-    - [ ] Account changes
+    - [ ] Account changes (future)
       - [ ] Prepare pictures
       - [ ] When a user joins the organization
       - [ ] When a member activates his/her account
       - [ ] When the administrator approves a member's account
       - [ ] When a member is deactived
       - [ ] When the administrator creates a member
-    - [ ] Scheduled messages
+    - [ ] Scheduled messages (future)
       - [ ] Prepare pictures
-    - [ ] Forms
+    - [ ] Forms (future)
       - [ ] Prepare pictures
-    - [ ] Form flows
+    - [ ] Form flows (future)
       - [ ] Prepare pictures
-    - [ ] Workflows
+    - [ ] Workflows (future)
       - [ ] Prepare pictures
 
 * TODO v0.1.0
