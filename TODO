@@ -1,22 +1,27 @@
 -*- mode: org; -*-
 * TODO v0.2.0
-  - [ ] Events and schedulers
-    - [ ] Overview
-      - [ ] Events 
-      - [ ] Subscriptions
-      - [ ] Actions
+  - [-] Events and schedulers
+    - [-] Overview
+      - [X] Events 
+      - [ ] Subscriptions (maybe not)
+      - [ ] Actions (maybe not)
         - [ ] Send emails
         - [ ] Send SMS
     - [ ] Account changes
+      - [ ] Prepare pictures
       - [ ] When a user joins the organization
       - [ ] When a member activates his/her account
       - [ ] When the administrator approves a member's account
       - [ ] When a member is deactived
       - [ ] When the administrator creates a member
     - [ ] Scheduled messages
+      - [ ] Prepare pictures
     - [ ] Forms
+      - [ ] Prepare pictures
     - [ ] Form flows
+      - [ ] Prepare pictures
     - [ ] Workflows
+      - [ ] Prepare pictures
 
 * TODO v0.1.0
   - [X] Settings
