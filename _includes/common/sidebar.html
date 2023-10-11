@@ -18,7 +18,12 @@
                         <!--  Menus -->
                         <ul class="list-unstyled fw-normal pb-2 small">
                             <li>
-                                <a href="/start/index.html" class="bd-links-link d-inline-block rounded active" aria-current="page">Introduction</a>
+                                {% if page.url == "/start/index.html" %}
+                                {% assign $is_active = true %}
+                                {% else %}
+                                {% assign $is_active = false %}
+                                {% endif %}                                
+                                <a href="/start/index.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>Introduction</a>
                             </li>
                         </ul>
                     </li>
@@ -35,7 +40,12 @@
                         <!--  Menus -->
                         <ul class="list-unstyled fw-normal pb-2 small">
                             <li>
-                                <a href="/settings/overview.html" class="bd-links-link d-inline-block rounded">Overview</a>
+                                {% if page.url == "/settings/overview.html" %}
+                                {% assign $is_active = true %}
+                                {% else %}
+                                {% assign $is_active = false %}
+                                {% endif %}                                
+                                <a href="/settings/overview.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>Overview</a>
                             </li>
                         </ul>
                     </li>
@@ -51,7 +61,12 @@
                         <!--  Menus -->
                         <ul class="list-unstyled fw-normal pb-2 small">
                             <li>
-                                <a href="/events-and-subscriptions/overview.html" class="bd-links-link d-inline-block rounded">Overview</a>
+                                {% if page.url == "/events-and-subscriptions/overview.html" %}
+                                {% assign $is_active = true %}
+                                {% else %}
+                                {% assign $is_active = false %}
+                                {% endif %}                                
+                                <a href="/events-and-subscriptions/overview.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>Overview</a>
                             </li>
                         </ul>
                     </li>
