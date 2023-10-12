@@ -5,18 +5,25 @@
 * TODO form flows
 
 * TODO v0.3.0 (forms)
-  - [ ] Design forms
+  - [ ] Assets
+    - [ ] A figure for working on forms
+  - [ ] Forms 
     - [ ] Overview
-    - [ ] Create a form
-      - [ ] form elements
-        - [ ] Select questions
-        - [ ] Create new squestion
-          - [ ] Single input
-          - [ ] Group
-          - [ ] table
-        - [ ] Rich content
-    - [ ] Preview a form
-    - [ ] Edit an existing form      
+      - [ ] workspace
+      - [ ] Create forms
+        - [ ] Create questions
+      - [ ] Preview forms
+      - [ ] Edit forms
+      - [ ] Publish forms
+  - [ ] Create questions
+    - [ ] Single input
+    - [ ] Group
+    - [ ] table
+  - [ ] Create forms
+    - [ ] Select questions    
+    - [ ] Create questions
+    - [ ] Create rich content
+    - [ ] Preview forms
   - [ ] Publish forms
 * TODO v0.2.0
   - [-] Events and schedulers
