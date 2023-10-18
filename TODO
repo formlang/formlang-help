@@ -5,11 +5,13 @@
 * TODO form flows
 
 * TODO v0.3.0 (forms)
-  - [ ] Assets
-    - [ ] A figure for working on forms
+  - [X] Assets
+    - [X] A life cycle for a form
+    - [X] The operations on a form
   - [ ] Forms 
     - [ ] Overview
-      - [ ] workspace
+      - [ ] Introduction
+      - [ ] workspace intro
       - [ ] Create forms
         - [ ] Create questions
       - [ ] Preview forms
