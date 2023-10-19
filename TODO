@@ -4,29 +4,33 @@
 
 * TODO form flows
 
-* TODO v0.3.0 (forms)
-  - [X] Assets
-    - [X] A life cycle for a form
-    - [X] The operations on a form
-  - [ ] Forms 
-    - [ ] Overview
-      - [ ] Introduction
-      - [ ] workspace intro
-      - [ ] Create forms
-        - [ ] Create questions
-      - [ ] Preview forms
-      - [ ] Edit forms
-      - [ ] Publish forms
-  - [ ] Create questions
-    - [ ] Single input
-    - [ ] Group
-    - [ ] table
+* TODO v0.4.0 
   - [ ] Create forms
     - [ ] Select questions    
     - [ ] Create questions
     - [ ] Create rich content
     - [ ] Preview forms
+  - [ ] Create questions
+    - [ ] Single input
+    - [ ] Group
+    - [ ] table
+  - [ ] Create form actions
   - [ ] Publish forms
+  - [ ] View responses
+
+* TODO v0.3.0 (forms)
+  - [X] Assets
+    - [X] A life cycle for a form
+    - [X] The operations on a form
+  - [X] Forms 
+    - [X] Overview
+      - [X] Introduction
+      - [X] Create/edit/preview forms
+      - [X] Create questions
+      - [X] Publish forms
+      - [X] Automating works
+      - [X] Customizing form notifications
+      - [X] Viewing form responses
 * TODO v0.2.0
   - [-] Events and schedulers
     - [-] Overview
