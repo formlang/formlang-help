@@ -1,3 +1,12 @@
+## 0.4.0 (October 19, 2023)
+  - todo
+  - Continued to document the form design overview page
+  - In middle of documenting the forms overview
+  - Merge branch 'main' of https://github.com/formlang/formlang-help
+  - Added images for forms
+  - todo
+  - Addressed the issue of making the current menu to be active
+
 ## 0.3.0 (October 10, 2023)
   - Refine events and subscriptions
   - todo
