@@ -27,6 +27,8 @@ timezone: CET
 
 # gloabl variables
 formLangBrand: <span class="fw-bold text-primary-emphasis">FormLang</span>
+designApp: <a href="https://formlang.com/design" target="_blank">design App</a>
+portalApp: <a href="https://formlang.com/portal" target="_blank">portal App</a>
 
 link4OrgAccountRegister: https://test-portal.formlang.com/Account/Register
 link4MemberRegister: https://test-portal.formlang.com/Account/MemberRegister

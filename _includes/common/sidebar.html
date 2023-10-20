@@ -90,6 +90,16 @@
                                 {% endif %}                                
                                 <a href="/forms/overview.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>Overview</a>
                             </li>
+                            <!-- Create forms -->
+                            <li>
+                                {% if page.url == "/forms/create-forms.html" %}
+                                {% assign $is_active = true %}
+                                {% else %}
+                                {% assign $is_active = false %}
+                                {% endif %}                                
+                                <a href="/forms/create-forms.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>Create forms</a>
+                            </li>
+                            
                         </ul>
                     </li>
                     
