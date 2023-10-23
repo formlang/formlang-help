@@ -99,6 +99,54 @@
                                 {% endif %}                                
                                 <a href="/forms/create-forms.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>Create forms</a>
                             </li>
+                            <!-- create questions -->
+                            <li>
+                                {% if page.url == "/forms/create-questions.html" %}
+                                {% assign $is_active = true %}
+                                {% else %}
+                                {% assign $is_active = false %}
+                                {% endif %}                                
+                                <a href="/forms/create-questions.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>Create questions</a>
+                            </li>
+                            <!-- Create dataflows -->
+                            <li>
+                                {% if page.url == "/forms/create-dataflows.html" %}
+                                {% assign $is_active = true %}
+                                {% else %}
+                                {% assign $is_active = false %}
+                                {% endif %}                                
+                                <a href="/forms/create-dataflows.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>Create dataflows</a>
+                            </li>
+
+                            <!-- Create form actions -->
+                            <li>
+                                {% if page.url == "/forms/create-form-actions.html" %}
+                                {% assign $is_active = true %}
+                                {% else %}
+                                {% assign $is_active = false %}
+                                {% endif %}                                
+                                <a href="/forms/create-form-actions.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>Create form actions</a>
+                            </li>
+
+                            <!-- Publish forms -->
+                            <li>
+                                {% if page.url == "/forms/publish-forms.html" %}
+                                {% assign $is_active = true %}
+                                {% else %}
+                                {% assign $is_active = false %}
+                                {% endif %}                                
+                                <a href="/forms/publish-forms.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>Publish forms</a>
+                            </li>
+
+                            <!-- View responses -->
+                            <li>
+                                {% if page.url == "/forms/view-responses.html" %}
+                                {% assign $is_active = true %}
+                                {% else %}
+                                {% assign $is_active = false %}
+                                {% endif %}                                
+                                <a href="/forms/view-responses.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>View responses</a>
+                            </li>
                             
                         </ul>
                     </li>

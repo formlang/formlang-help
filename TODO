@@ -5,15 +5,16 @@
 * TODO form flows
 
 * TODO v0.4.0 
-  - [ ] Create forms
-    - [ ] Select questions    
-    - [ ] Create questions
-    - [ ] Create rich content
-    - [ ] Preview forms
+  - [X] Create forms
+    - [X] Select questions    
+    - [X] Create questions
+    - [X] Create rich content
+    - [X] Preview forms
   - [ ] Create questions
     - [ ] Single input
     - [ ] Group
     - [ ] table
+  - [ ] Create dataflow
   - [ ] Create form actions
   - [ ] Publish forms
   - [ ] View responses
