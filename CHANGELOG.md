@@ -1,3 +1,11 @@
+## 0.5.0 (October 23, 2023)
+  - Documented create forms page
+  - Merge branch 'main' of https://github.com/formlang/formlang-help
+  - Updated form layout in workspace images
+  - Image
+  - Images
+  - In middle: creating forms
+
 ## 0.4.0 (October 19, 2023)
   - todo
   - Continued to document the form design overview page
