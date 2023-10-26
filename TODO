@@ -10,12 +10,14 @@
     - [X] Create questions
     - [X] Create rich content
     - [X] Preview forms
-  - [ ] Create questions
-    - [ ] Single input
-    - [ ] Group
-    - [ ] table
+  - [X] Create questions
+    - [X] Single input
+    - [X] Group
+    - [X] table
   - [ ] Create dataflow
+    - [ ] Rules
   - [ ] Create form actions
+    - [ ] An example
   - [ ] Publish forms
   - [ ] View responses
 
