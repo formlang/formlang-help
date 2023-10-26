@@ -57,31 +57,156 @@ permalink: /forms/create-questions.html
 
 <div class="bd-content ps-lg-2">
 
+    {% assign figure_counter = 0 %}            
+
+    <h3>
+        Selecting from existing questions
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        To select an existing question, click the <b>Add new item</b> drop-down menu in the form workspace and select <b>Select from existing questions</b>. A dialog box will appear, as shown in Figure {{ figure_counter }}.
+    </p>
+    
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/select-from-existing-questions.png" class="img-fluid rounded mx-auto d-block" alt="Selecting from existing questions">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Selecting from existing questions</h6>        
+    </div>
+
     <h3>
         Single-input questions
     </h3>
 
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        To add a single-input question, click the <b>Add new item</b> drop-down menu in the form workspace and select <b>Create a single-input question</b>. A dialog box will appear, as shown in Figure {{ figure_counter }}.
+    </p>
+
     <div class="px-lg-3 py-2">
-        <img src="/assets/img/forms/single-input-question-dialog-raw.png" class="img-fluid rounded mx-auto d-block" alt="Creating/editing a single-input question">
-        <h6 class="text-center mt-3">Figure 1: Creating/editing a single-input question</h6>        
+        <img src="/assets/img/forms/create-single-input-question.png" class="img-fluid rounded mx-auto d-block" alt="Creating/editing a single-input question">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Creating/editing a single-input question</h6>        
     </div>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}                                
+
+    <p>
+        To set input validation rules for your question, click the "Constraints" tab in the dialog box. The available validation rules will depend on the type of question. For example, a question that accepts date input supports the following validation rules:
+    </p>
+
+    <ul>
+        <li>Required</li>
+        <li>Default value</li>
+        <li>Minimum and maximum values</li>
+    </ul>
+
+    <p>
+        As shown in Figure {{ figure_counter }}, you can set these validation rules in the Constraints tab.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/question-constraints.png" class="img-fluid rounded mx-auto d-block" alt="Editing the question constraints">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Editing the question constraints</h6>        
+    </div>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        Once you close the dialog box, the question illustration will appear in the form workspace. Figure {{ figure_counter }} shows the illustration of the question from above.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/single-input-question-illustration.png" class="img-fluid rounded mx-auto d-block" alt="Single input question illustration">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Single input question illustration</h6>        
+    </div>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        The final look of your question may be different from the illustration you see in the form workspace. To see how your question will look in the final form, you can preview your form. Figure {{ figure_counter }} shows the final version of the question from above.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/single-input-question-final-look.png" class="img-fluid rounded mx-auto d-block" alt="Single input question final look">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Single input question final look</h6>        
+    </div>
+    
 
     <h3>
         Group questions
     </h3>
 
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        To add a group question, click the <b>Add new item</b> drop-down menu in the form workspace and select <b>Create a group question</b>. A dialog box will appear, as shown in Figure {{ figure_counter }}.
+    </p>
+
     <div class="px-lg-3 py-2">
-        <img src="/assets/img/forms/group-question-dialog-raw.png" class="img-fluid rounded mx-auto d-block" alt="Creating/editing a group question">
-        <h6 class="text-center mt-3">Figure 2: Creating/editing a group question</h6>        
+        <img src="/assets/img/forms/create-group-question.png" class="img-fluid rounded mx-auto d-block" alt="Creating/editing a group question">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Creating/editing a group question</h6>        
     </div>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}                                
+
+    <p>
+        Once you close the dialog box, you will see the illustration of the question from above, as shown in Figure {{ figure_counter }}.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/group-question-illustration.png" class="img-fluid rounded mx-auto d-block" alt="Group question illustration">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Group question illustration</h6>        
+    </div>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        Click the "Preview your form" button in the toolbar, you will see the final look of the question from above, as shown in Figure {{ figure_counter }}.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/group-question-final-look.png" class="img-fluid rounded mx-auto d-block" alt="Group question final look">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Group question final look</h6>        
+    </div>
+    
 
     <h3>
         Table questions
     </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        To add a table question, click the <b>Add new item</b> drop-down menu in the form workspace and select <b>Create a table question</b>. A dialog box will appear, as shown in Figure {{ figure_counter }}.
+    </p>
+    
     
     <div class="px-lg-3 py-2">
-        <img src="/assets/img/forms/group-question-dialog-raw.png" class="img-fluid rounded mx-auto d-block" alt="Creating/editing a table question">
-        <h6 class="text-center mt-3">Figure 2: Creating/editing a table question</h6>        
+        <img src="/assets/img/forms/create-table-question.png" class="img-fluid rounded mx-auto d-block" alt="Creating/editing a table question">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Creating/editing a table question</h6>        
+    </div>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        Once you close the dialog box, you will see the illustration of the question from above, as shown in Figure {{ figure_counter }}.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/table-question-illustration.png" class="img-fluid rounded mx-auto d-block" alt="Table question illustration">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Table question illustration</h6>        
+    </div>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        Click the "Preview your form" button in the toolbar, you will see the final look of the question from above, as shown in Figure {{ figure_counter }}.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/table-question-final-look.png" class="img-fluid rounded mx-auto d-block" alt="Table question final look">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Table question final look</h6>        
     </div>
     
 
