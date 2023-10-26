@@ -4,22 +4,25 @@
 
 * TODO form flows
 
-* TODO v0.4.0 
-  - [X] Create forms
-    - [X] Select questions    
-    - [X] Create questions
-    - [X] Create rich content
-    - [X] Preview forms
-  - [X] Create questions
-    - [X] Single input
-    - [X] Group
-    - [X] table
+* TODO v0.6.0
   - [ ] Create dataflow
     - [ ] Rules
   - [ ] Create form actions
     - [ ] An example
   - [ ] Publish forms
   - [ ] View responses
+* TODO v0.5.0
+  - [X] Create questions
+    - [X] Single input
+    - [X] Group
+    - [X] table
+
+* TODO v0.4.0 
+  - [X] Create forms
+    - [X] Select questions    
+    - [X] Create questions
+    - [X] Create rich content
+    - [X] Preview forms
 
 * TODO v0.3.0 (forms)
   - [X] Assets
