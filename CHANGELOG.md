@@ -1,3 +1,10 @@
+## 0.7.0 (October 27, 2023)
+  - Added table of content for dataflows and questions
+  - Documented creating dataflows
+  - Merge branch 'main' of https://github.com/formlang/formlang-help
+  - Added dataflow assets
+  - todo
+
 ## 0.6.0 (October 26, 2023)
   - Todo
   - Documented creating questions
