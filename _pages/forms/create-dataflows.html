@@ -1,0 +1,162 @@
+---
+title: Creating Dataflows
+layout: default
+slug: forms
+permalink: /forms/create-dataflows.html
+---
+<div class="bd-intro pt-2 ps-lg-2">
+    <div class="d-md-flex align-items-center justify-content-start mb-4">
+        <h1 class="bd-title" id="content">
+            Dataflows: Powerful logic tools for controlling your forms
+        </h1>
+    </div>
+
+    <P class="bd-lead">
+        Dataflows are a powerful tool that allows you to control the behavior of your forms using logic. Dataflows can help you to create more dynamic and interactive forms, and to collect more accurate and complete data.        
+    </p>
+
+    <p>
+        For example, you can use dataflows to:
+    </p>
+    
+    <ul>
+        <li>
+            Disable or hide questions based on the input to another question. For example, you could use a dataflow to disable a question about a shipping address if the user selects "Pick up in store" as their delivery option.
+        </li>
+        <li>
+            Disable or hide questions based on some common context, such as the day of the week. For example, you could use a dataflow to show a question only on Monday.            
+        </li>
+        <li>
+            Auto-fill questions based on user input or context. For example, if a user selects their country in one question, you can use a dataflow to automatically fill in their state in the next question. 
+        </li>
+    </ul>
+
+    <p>
+        Read the following example to learn how to use dataflows to achieve your goals.        
+    </p>
+    
+</div>
+
+<div class="bd-content ps-lg-2">
+
+    {% assign figure_counter = 0 %}                
+
+    <h3>
+        Creating a rule
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+
+    <p>
+        To create a dataflow rule, click the <b>Dataflow</b> tab in the form workspace and then click <b>Add new rule</b>. An empty rule will appear, as shown in Figure {{ figure_counter }}.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/dataflow-add-rule.png" class="img-fluid rounded mx-auto d-block" alt="Adding a rule">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Adding a new rule in the dataflow</h6>        
+    </div>
+
+    <h3>
+        Editing conditions and actions in the rule
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        Each dataflow rule consists of two parts: conditions and actions. Conditions define when the rule should be applied, and actions define what should happen when the rule is applied.
+    </p>
+
+    <p>
+        There are two types of conditions:
+    </p>
+    <dl>
+        <dt>
+            Question-related conditions: 
+        </dt>
+        <dd>
+            These conditions are based on the input of a question. To create a question-related condition, click the + button under the question in the empty table. A dialog box will appear, as shown in Figure {{ figure_counter }}. In the dialog box, you can define the operation on the input of the question. For example, you can compare if the question is checked or not.            
+        </dd>
+        <dt>
+            Advanced expressions:
+        </dt>
+        <dd>
+            These conditions are independent of questions and are defined using JavaScript expressions. Use them very carefully. We will cover them in more detail later.
+        </dd>
+    </dl>
+    
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/dataflow-edit-condition.png" class="img-fluid rounded mx-auto d-block" alt="Editing the rule conditions">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Editing the rule conditions</h6>        
+    </div>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+
+    <p>
+        To edit the actions of a rule, click the + button in the <b>Actions</b> section of the rule. A dialog box will appear, as shown in Figure {{ figure_counter }}. You can choose one of the three following actions:
+    </p>
+
+    <ul>
+        <li>
+            <b>Set question answer</b>: This action allows you to set the answer of a question based on the conditions of the rule.
+        </li>
+        <li>
+            <b>Hide question</b>: This action allows you to hide a question based on the conditions of the rule.
+        </li>
+        <li>
+            <b>Disable question</b>: This action allows you to disable a question based on the conditions of the rule.
+        </li>
+    </ul>
+
+    <p>
+        Choose the action that is right for your needs and fill out the remaining inputs.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/dataflow-edit-action.png" class="img-fluid rounded mx-auto d-block" alt="Editing the rule action">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Editing the rule actions</h6>        
+    </div>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+
+    <p>
+        Once you've added conditions and actions to the rule, the updated rule definition will appear in the form workspace,
+        as shown in Figure {{ figure_counter }}.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/dataflow-rule-def.png" class="img-fluid rounded mx-auto d-block" alt="Rule definition in the dataflow">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Rule definition in the dataflow</h6>        
+    </div>
+
+    <h3>
+        Advanced expressions        
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+
+    <p>
+        Advanced expressions can be used to express complex conditions. For example, the expression <code>new Date().getDate() != 1</code>, as shown in Figure {{ figure_counter }}, means "it is Monday".
+    </p>
+
+    <div class="alert alert-danger">
+        Use advanced expressions carefully. Make sure that the input you enter is a valid JavaScript expression.        
+    </div>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/dataflow-edit-advanced-condition.png" class="img-fluid rounded mx-auto d-block" alt="Editing theadvanced condition">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Editing the advanced conditions</h6>        
+    </div>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        Figure {{ figure_counter }} shows the definition of the rule using advanced expressions in the conditions.
+    </p>
+    
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/forms/dataflow-rule-def-with-adv-conditions.png" class="img-fluid rounded mx-auto d-block" alt="Rule definition with the advanced conditions">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Rule definition with advanced expressions</h6>        
+    </div>
+
+</div>
+
