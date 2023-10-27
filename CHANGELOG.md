@@ -1,3 +1,10 @@
+## 0.6.0 (October 26, 2023)
+  - Todo
+  - Documented creating questions
+  - Added images about selecting form existing questions
+  - Added images about questions
+  - Documented creating questions
+
 ## 0.5.0 (October 23, 2023)
   - Documented create forms page
   - Merge branch 'main' of https://github.com/formlang/formlang-help
