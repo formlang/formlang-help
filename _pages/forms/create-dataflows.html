@@ -37,12 +37,39 @@ permalink: /forms/create-dataflows.html
     
 </div>
 
+<div class="bd-toc mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+    <button class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
+        On this page
+        
+        <svg class="bi d-md-none ms-2" aria-hidden="true">
+            <use xlink:href="#chevron-expand"></use>
+        </svg>
+    </button>
+    <strong class="d-none d-md-block h6 my-2 ms-3">On this page</strong>
+    <hr class="d-none d-md-block my-2 ms-3">
+    <div class="collapse bd-toc-collapse" id="tocContents">
+        <nav id="TableOfContents">
+            <ul>
+                <li>
+                    <a href="#creating-rule ">Creating a dataflow rule</a>
+                </li>
+                <li>
+                    <a href="#editing-conditions-and-actions">Editing conditions and actions in the rule</a>
+                </li>
+                <li>
+                    <a href="#advanced-expressions">Advanced expressions</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
 <div class="bd-content ps-lg-2">
 
     {% assign figure_counter = 0 %}                
 
-    <h3>
-        Creating a rule
+    <h3 id="creating-rule">
+        Creating a dataflow rule
     </h3>
 
     {% assign figure_counter = figure_counter | plus: 1 %}
@@ -56,7 +83,7 @@ permalink: /forms/create-dataflows.html
         <h6 class="text-center mt-3">Figure {{ figure_counter }}: Adding a new rule in the dataflow</h6>        
     </div>
 
-    <h3>
+    <h3 id="editing-conditions-and-actions">
         Editing conditions and actions in the rule
     </h3>
 
@@ -128,7 +155,7 @@ permalink: /forms/create-dataflows.html
         <h6 class="text-center mt-3">Figure {{ figure_counter }}: Rule definition in the dataflow</h6>        
     </div>
 
-    <h3>
+    <h3 id="advanced-expressions">
         Advanced expressions        
     </h3>
 

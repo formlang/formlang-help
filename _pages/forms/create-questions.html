@@ -55,11 +55,41 @@ permalink: /forms/create-questions.html
     
 </div>
 
+<div class="bd-toc mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+    <button class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
+        On this page
+        
+        <svg class="bi d-md-none ms-2" aria-hidden="true">
+            <use xlink:href="#chevron-expand"></use>
+        </svg>
+    </button>
+    <strong class="d-none d-md-block h6 my-2 ms-3">On this page</strong>
+    <hr class="d-none d-md-block my-2 ms-3">
+    <div class="collapse bd-toc-collapse" id="tocContents">
+        <nav id="TableOfContents">
+            <ul>
+                <li>
+                    <a href="#selecting-questions">Selecting from existing questions</a>
+                </li>
+                <li>
+                    <a href="#single-input-questions">Single-input questions</a>
+                </li>
+                <li>
+                    <a href="#group-questions">Group questions</a>
+                </li>
+                <li>
+                    <a href="#table-questions">Table questions</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
 <div class="bd-content ps-lg-2">
 
     {% assign figure_counter = 0 %}            
 
-    <h3>
+    <h3 id="selecting-questions">
         Selecting from existing questions
     </h3>
 
@@ -74,7 +104,7 @@ permalink: /forms/create-questions.html
         <h6 class="text-center mt-3">Figure {{ figure_counter }}: Selecting from existing questions</h6>        
     </div>
 
-    <h3>
+    <h3 id="single-input-questions">
         Single-input questions
     </h3>
 
@@ -133,7 +163,7 @@ permalink: /forms/create-questions.html
     </div>
     
 
-    <h3>
+    <h3 id="group-questions">
         Group questions
     </h3>
 
@@ -171,7 +201,7 @@ permalink: /forms/create-questions.html
     </div>
     
 
-    <h3>
+    <h3 id="table-questions">
         Table questions
     </h3>
 
