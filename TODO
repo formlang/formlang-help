@@ -4,14 +4,16 @@
 
 * TODO form flows
 
-* TODO v0.6.0
-  - [ ] Create dataflow
-    - [ ] Assets
-    - [ ] Rules
+* TODO 0.7.0
   - [ ] Create form actions
     - [ ] An example
   - [ ] Publish forms
   - [ ] View responses
+
+* TODO v0.6.0
+  - [X] Create dataflow
+    - [X] Assets
+    - [X] Rules
 * TODO v0.5.0
   - [X] Create questions
     - [X] Single input
