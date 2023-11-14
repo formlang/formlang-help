@@ -39,7 +39,7 @@ permalink: /form-actions/overview.html
     </ul>
 
     <p>
-        Read on to learn about the form action workspace and its general principles. Some specific examples are provided in the links at the end.        
+        Learn about the form action workspace and its general principles. Find specific examples in the links at the end.        
     </p>
     
 </div>
@@ -54,17 +54,59 @@ permalink: /form-actions/overview.html
     {% assign figure_counter = figure_counter | plus: 1 %}
 
     <p>
-        The form action workspace is your one-stop shop for creating and editing form actions.
-        To access the workspace, follow the menu "Create a Form Action" in the {{ site.designApp }}.
-        Figure {{ figure_counter }} shows what the workspace is like. 
+        The form action workspace is a one-stop shop for creating and editing form actions. To access the workspace, go to Create a Form Action in the {{ site.designApp }}.        
+    </p>
+
+    <p>
+        As shown in Figure {{ figure_counter }}, the workspace consists of the following key features:        
     </p>
     
     <div class="px-lg-3 py-2" id="form-acion-workspace-figure">
         <img src="/assets/img/form-actions/form-action-workspace.png" class="img-fluid rounded mx-auto d-block" alt="Form action workspace">
-        <h6 class="text-center mt-3">Figure 1: Form action workspace</h6>
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Form action workspace</h6>
     </div>
 
-    <p>
-    </p>
+    <dl>
+        <dt>
+            1. Toolbar
+        </dt>
+        <dd>
+            The toolbar at the top of the workspace has buttons for opening/creating a form action, saving the form action, and redoing/undoing recent operations.
+        </dd>
+        <dt>
+            2. Form action title
+        </dt>
+        <dd>
+            The form action title is displayed below the toolbar. Click the title to edit it.
+        </dd>
+        <dt>
+            3. Node toolbox
+        </dt>
+        <dd>
+            The left node toolbox provides five types of nodes: 
+            <ul>
+                <li><b>Form node:</b> Represents a form.</li>
+                <li><b>Evaluation node:</b>Evaluates the form responses based on the evaluation rules you define.</li>
+                <li><b>Decision node:</b>Makes a decision based on the results of the evaluation.</li>
+                <li><b>Feedback node:</b>Sends a message or a new form link to the user.</li>
+                <li><b>Custom event node</b>: Triggers a custom event.</li>
+            </ul>
+
+            To create a node, drag it from the toolbox and drop it on the canvas. For more information about node types, see Form Action Nodes: link to documentation.            
+        </dd>
+        <dt>
+            4. Canvas
+        </dt>
+        <dd>
+            The canvas is the main workspace where you create and edit your form actions.
+        </dd>
+        <dt>
+            3. Property inspector
+        </dt>
+        <dd>
+            The property inspector allows you to edit the properties of the selected edge or node in the canvas.            
+        </dd>
+        
+    </dl>
     
 </div>
