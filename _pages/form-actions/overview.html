@@ -12,7 +12,7 @@ permalink: /form-actions/overview.html
         </h1>
     </div>
 
-    <P class="bd-lead">
+    <p class="bd-lead">
         With form actions, you can automate assessing the form responses and performing other related tasks based on the assessment results.        
     </p>
 
@@ -61,7 +61,7 @@ permalink: /form-actions/overview.html
         As shown in Figure {{ figure_counter }}, the workspace consists of the following key features:        
     </p>
     
-    <div class="px-lg-3 py-2" id="form-acion-workspace-figure">
+    <div class="px-lg-3 py-2" id="form-acion-workspace-figure">a
         <img src="/assets/img/form-actions/form-action-workspace.png" class="img-fluid rounded mx-auto d-block" alt="Form action workspace">
         <h6 class="text-center mt-3">Figure {{ figure_counter }}: Form action workspace</h6>
     </div>
@@ -101,12 +101,153 @@ permalink: /form-actions/overview.html
             The canvas is the main workspace where you create and edit your form actions.
         </dd>
         <dt>
-            3. Property inspector
+            5. Property inspector
         </dt>
         <dd>
             The property inspector allows you to edit the properties of the selected edge or node in the canvas.            
         </dd>
         
     </dl>
+
+    <h3>
+        Validating Form Actions
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}    
+    
+    <p>
+        A form action is represented as a flowchart. To determine if your form action is valid, check its corresponding flowchart against the following rules:
+    </p>
+
+    <ul>
+        <li>
+            <b>Start with a Form Node:</b>
+            The first node in a form action flowchart must always be a form node. This node represents the form that will be used to collect data from respondents.
+        </li>
+        <li>
+            <b>Valid Successors for Form Nodes:</b>
+            Following a form node, there are three valid types of nodes that can be placed next: an evaluation node, a feedback node, or a custom event node.
+        </li>
+        <li>
+            <b>Evaluation Node Successors:</b>
+            The successor of an evaluation node must always be a decision node. An evaluation node assesses the form responses based on predefined rules, and the decision node determines the next step based on the evaluation results.
+        </li>
+        <li>
+            <b>Decision Node Successors:</b>
+            A decision node can have multiple successors, representing the different paths the form action can take based on the evaluation results.
+        </li>
+        <li>
+            <b>Valid Successors for Decision Nodes:</b>
+            The successors of a decision node must be either feedback nodes or custom event nodes. Feedback nodes provide responses to respondents, while custom event nodes trigger specific actions.
+        </li>
+        <li>
+            <b>Leaf Nodes:</b>
+            A feedback node is a leaf node, meaning it has no successors. This indicates that the feedback node represents the final step in the form action.
+        </li>
+        <li>
+            <b>Custom Event Node Successors:</b>
+            A custom event node can be a leaf node or have a feedback node as its successor. If a custom event node is followed by a feedback node, it provides additional information to the respondent.
+        </li>
+    </ul>
+
+    <h5>
+        Example of a Valid Form Action
+    </h5>
+
+    <p>
+        The figure below shows an example of a valid form action. In this case, the system evaluates the form response and, based on the evaluation result, sends one of two feedback messages to the respondent.
+    </p>
+    
+    <div class="px-lg-3 py-2" id="valid-form-action-example-figure">
+        <img src="/assets/img/form-actions/valid-form-action.png" class="img-fluid rounded mx-auto d-block" alt="Valid form action example">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Valid form action example</h6>
+    </div>
+
+    <h3>
+        Evaluation rules
+    </h3>
+    
+    <p>
+        You can define two types of evaluation rules for an evaluation node:
+    </p>
+    <ul>
+        <li>
+            <b>Weighted scoring:</b>
+            Assigns a point value to each question, and the total
+            score for the form response is calculated by adding up the
+            points for all of the questions answered correctly. This
+            method is useful for evaluating forms where the questions
+            have different levels of difficulty or importance. 
+        </li>
+        <li>
+            <b>Logic evaluation:</b>
+            Defines a set of logic statements, each of which assesses
+            whether a specific condition based on the form response is
+            true or false.  The overall result of the evaluation is
+            determined by applying either the conjunctive (AND) or
+            disjunctive (OR) operation to the individual logic
+            statements. In other words, the form response is
+            considered to be true only if all the logic statements
+            evaluate to true (AND), or if at least one logic statement
+            evaluates to true (OR).
+        </li>
+    </ul>
+
+
+    <h5>Defining Evaluation Rules</h5>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        To define evaluation rules, select the evaluation node in the
+        canvas and then click the Edit button in the corresponding
+        property inspector. This will open a dialog box, as shown in Figure {{ figure_counter }}, where you can
+        select the type of scoring you want to use and then define the
+        rules for that type of scoring.
+    </p>
+
+    <div class="px-lg-3 py-2" id="weighted-scoring-figure">
+        <img src="/assets/img/form-actions/evaluation-options.png" class="img-fluid rounded mx-auto d-block" alt="Evaluation Options">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Two evaluation options</h6>
+    </div>
+    
+    <h5>
+        Weighted Scoring
+    </h5>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}        
+
+    <p>
+        When you select weighted scoring, a dialog box, as shown in Figure {{ figure_counter }} opens where you
+        can define the comparative operations and assign points for
+        each question. The system will apply these rules to the
+        selected questions and compute the total points for the form
+        response.
+    </p>
+
+    <div class="px-lg-3 py-2" id="weighted-scoring-figure">
+        <img src="/assets/img/form-actions/weighted-scoring.png" class="img-fluid rounded mx-auto d-block" alt="Weighted scoring rules">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Defining the rules for weighted scoring</h6>
+    </div>
+
+    <h5>
+        Logic Evaluation
+    </h5>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+
+    <p>
+        When you select logic evaluation, a dialog box, as shown in
+        Figure {{ figure_counter }}, opens where you can define the
+        logic for evaluating the form response to be true or
+        false. The system will apply this logic to the form response
+        and determine whether it is true or false.
+    </p>
+
+    <div class="px-lg-3 py-2" id="binary-scoring-figure">
+        <img src="/assets/img/form-actions/binary-scoring.png" class="img-fluid rounded mx-auto d-block" alt="Binary scoring rules">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Defining the rules for logic evaluation</h6>
+    </div>
+    
     
 </div>
