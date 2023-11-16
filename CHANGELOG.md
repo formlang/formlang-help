@@ -1,3 +1,18 @@
+## 0.8.0 (November 16, 2023)
+  - todo
+  - Cleaned up
+  - Wrapped up the form action user guide
+  - Updated the form action assets
+  - k
+  - More writing: evaluation rules for form actions
+  - Assets for form actions
+  - On form actions >> form action workspace
+  - Assets for form actions
+  - overview for form actions
+  - Restructed form actions
+  - form actions in middle
+  - todo
+
 ## 0.7.0 (October 27, 2023)
   - Added table of content for dataflows and questions
   - Documented creating dataflows
