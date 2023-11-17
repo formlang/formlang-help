@@ -1,7 +1,7 @@
 ---
 title: Introduction to Form Actions
 layout: default
-slug: forms
+slug: form-actions
 permalink: /form-actions/overview.html
 ---
 
@@ -39,10 +39,40 @@ permalink: /form-actions/overview.html
     </ul>
 
     <p>
-        Learn about the form action workspace and its general principles. Find specific examples in the links at the end.        
+        Learn about the form action workspace and its general principles.
+        <!-- todo -->
+        <!--  Find specific examples in the links at the end. -->
     </p>
     
 </div>
+
+<div class="bd-toc mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+    <button class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
+        On this page
+        
+        <svg class="bi d-md-none ms-2" aria-hidden="true">
+            <use xlink:href="#chevron-expand"></use>
+        </svg>
+    </button>
+    <strong class="d-none d-md-block h6 my-2 ms-3">On this page</strong>
+    <hr class="d-none d-md-block my-2 ms-3">
+    <div class="collapse bd-toc-collapse" id="tocContents">
+        <nav id="TableOfContents">
+            <ul>
+                <li>
+                    <a href="#form-action-workspace">Form action workspace</a>
+                </li>
+                <li>
+                    <a href="#validating-form-actions">Validating form actions</a>
+                </li>
+                <li>
+                    <a href="#evaluation-methods">Evaluation methods</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
 <div class="bd-content ps-lg-2">
 
     {% assign figure_counter = 0 %}
@@ -109,7 +139,7 @@ permalink: /form-actions/overview.html
         
     </dl>
 
-    <h3>
+    <h3 id="validating-form-actions">
         Validating Form Actions
     </h3>
 
@@ -141,6 +171,10 @@ permalink: /form-actions/overview.html
             The successors of a decision node must be either feedback nodes or custom event nodes. Feedback nodes provide responses to respondents, while custom event nodes trigger specific actions.
         </li>
         <li>
+            <b>Outgoing Decision Edges:</b>
+            Each edge originating from a decision node represents a separate branch following the evaluation node. To define the specific condition under which this branch will be executed, click the edge and edit its properties.
+        </li>
+        <li>
             <b>Leaf Nodes:</b>
             A feedback node is a leaf node, meaning it has no successors. This indicates that the feedback node represents the final step in the form action.
         </li>
@@ -163,12 +197,12 @@ permalink: /form-actions/overview.html
         <h6 class="text-center mt-3">Figure {{ figure_counter }}: Valid form action example</h6>
     </div>
 
-    <h3>
-        Evaluation rules
+    <h3 id="evaluation-methods">
+        Evaluation methods
     </h3>
     
     <p>
-        You can define two types of evaluation rules for an evaluation node:
+        You can choose one of the two evaluation methods for an evaluation node:
     </p>
     <ul>
         <li>
@@ -202,17 +236,17 @@ permalink: /form-actions/overview.html
         To define evaluation rules, select the evaluation node in the
         canvas and then click the Edit button in the corresponding
         property inspector. This will open a dialog box, as shown in Figure {{ figure_counter }}, where you can
-        select the type of scoring you want to use and then define the
-        rules for that type of scoring.
+        select the evaluation method you want to use and then define the
+        rules for that method.
     </p>
 
-    <div class="px-lg-3 py-2" id="evaluation-options-figure">
-        <img src="/assets/img/form-actions/evaluation-options.png" class="img-fluid rounded mx-auto d-block" alt="Evaluation Options">
-        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Two evaluation options</h6>
+    <div class="px-lg-3 py-2" id="evaluation-methods-figure">
+        <img src="/assets/img/form-actions/evaluation-methods.png" class="img-fluid rounded mx-auto d-block" alt="Evaluation methods">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Two evaluation methods</h6>
     </div>
     
     <h5>
-        Weighted Scoring
+        Weighted Scoring Rules
     </h5>
 
     {% assign figure_counter = figure_counter | plus: 1 %}        
@@ -225,13 +259,13 @@ permalink: /form-actions/overview.html
         response.
     </p>
 
-    <div class="px-lg-3 py-2" id="weighted-scoring-figure">
-        <img src="/assets/img/form-actions/weighted-scoring.png" class="img-fluid rounded mx-auto d-block" alt="Weighted scoring rules">
+    <div class="px-lg-3 py-2" id="weighted-scoring-rules-figure">
+        <img src="/assets/img/form-actions/weighted-scoring-rules.png" class="img-fluid rounded mx-auto d-block" alt="Weighted scoring rules">
         <h6 class="text-center mt-3">Figure {{ figure_counter }}: Defining the weighted scoring rules</h6>
     </div>
 
     <h5>
-        Logic Evaluation
+        Logic Evaluation Rules
     </h5>
 
     {% assign figure_counter = figure_counter | plus: 1 %}
@@ -244,8 +278,8 @@ permalink: /form-actions/overview.html
         and determine whether it is true or false.
     </p>
 
-    <div class="px-lg-3 py-2" id="logic-evaluation-figure">
-        <img src="/assets/img/form-actions/binary-scoring.png" class="img-fluid rounded mx-auto d-block" alt="Logic evaluation rules">
+    <div class="px-lg-3 py-2" id="logic-evaluation-rules-figure">
+        <img src="/assets/img/form-actions/logic-evaluation-rules.png" class="img-fluid rounded mx-auto d-block" alt="Logic evaluation rules">
         <h6 class="text-center mt-3">Figure {{ figure_counter }}: Defining the logic evaluation rules</h6>
     </div>
     
