@@ -1,3 +1,8 @@
+## 0.9.0 (November 17, 2023)
+  - Added the user guide for publishing forms
+  - Merge branch 'main' of https://github.com/formlang/formlang-help
+  - Added assets for publishing forms
+
 ## 0.8.0 (November 16, 2023)
   - todo
   - Cleaned up
