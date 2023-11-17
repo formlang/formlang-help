@@ -1,0 +1,206 @@
+---
+title: Publishing Forms
+layout: default
+slug: publish-forms
+permalink: /publish-forms/overview.html
+---
+
+<div class="bd-intro pt-2 ps-lg-2">
+    <div class="d-md-flex align-items-center justify-content-start mb-4">
+        <h1 class="bd-title" id="content">
+            Easily Publish Forms for Multiple Audiences            
+        </h1>
+    </div>
+
+    <p class="bd-lead">
+        With FormLang, you can seamlessly publish a single form to
+        different audiences, catering to their specific needs and
+        access control requirements. FormLang offers three distinct
+        audience types, each with its own unique access control
+        methods.        
+    </p>
+
+    <ul>
+        <li>
+            <b>Everyone:</b>
+            This option provides broad accessibility to the form,
+            making it available to anyone who encounters it. No
+            respondent information is tracked, ensuring
+            privacy. However, you can still implement protective
+            measures like setting a maximum number of responses or
+            requiring a password for access.            
+            <ul>
+                <li>
+                    <b>Maximum Responses:</b>
+                    Once the specified response limit is reached, no further submissions will be accepted.
+                </li>
+                <li>
+                    <b>Password Protection:</b>
+                    Only individuals with the correct password can access the form.                    
+                </li>
+            </ul>
+        </li>
+        <li>
+            <b>Visitors:</b>
+            This audience type utilizes a preliminary form to gather
+            respondent information before granting access to the main
+            form. This approach is particularly useful when you need
+            to collect specific respondent details and avoid
+            repetitive data entry. You can safeguard the form using
+            the following methods:
+            <ul>
+                <li><b>Maximum Responses:</b> Limit the total number of responses.</li>
+                <li><b>Password Protection:</b> Restrict access to those who possess the password.</li>
+                <li><b>Disabling New Visitors:</b> Prevent new visitors from accessing the form, restricting access to existing users.</li>
+                <li><b>Verifying Respondent Information:</b>Validate respondent identities by requesting their email addresses.</li>
+            </ul>
+        </li>
+        <li>
+            <b>Organization Members:</b>
+            This audience type restricts form access to authorized
+            members within your organization. Access control is
+            governed by granular attribute-based access control
+            (ABAC), granting access exclusively to users who match the
+            defined attributes. These attributes can encompass email
+            addresses, roles, organizational units, and other relevant
+            criteria.
+        </li>
+    </ul>
+
+    <p>
+        By carefully considering the target audience for your form,
+        you can select the most appropriate publication method,
+        ensuring that your form reaches the intended recipients while
+        maintaining data privacy and security.
+    </p>
+
+</div>
+
+<div class="bd-toc mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+    <button class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
+        On this page
+        
+        <svg class="bi d-md-none ms-2" aria-hidden="true">
+            <use xlink:href="#chevron-expand"></use>
+        </svg>
+    </button>
+    <strong class="d-none d-md-block h6 my-2 ms-3">On this page</strong>
+    <hr class="d-none d-md-block my-2 ms-3">
+    <div class="collapse bd-toc-collapse" id="tocContents">
+        <nav id="TableOfContents">
+            <ul>
+                <li>
+                    <a href="#wizard-components">Key Components of the Publishing Wizard</a>
+                </li>
+                <li>
+                    <a href="#acl-options">ACL (Access Control List) Options</a>
+                </li>
+                <li>
+                    <a href="#acl-rules-for-members">ACL Rules for Members</a>
+                </li>
+                <li>
+                    <a href="#additional-notes">Additional Notes</a>                    
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="bd-content ps-lg-2">
+
+    {% assign figure_counter = 0 %}
+    
+    <h2>
+        Publishing wizard
+    </h2>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+
+    <p>
+        To publish a form, navigate to the <code>Publish a Form</code> option
+        within the {{ site.designApp }}. Upon clicking the Start
+        button on the cover page, the publishing wizard will appear,
+        as illustrated in Figure {{ figure_counter }}.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/publish-forms/publish-form-wizard.png" class="img-fluid rounded mx-auto d-block" alt="Wizard for publishing forms">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Wizard for publishing forms</h6>
+    </div>
+
+    <h3 id="wizard-components">Key Components of the Publishing Wizard</h3>
+    
+    <p>
+        The publishing wizard comprises the following elements:
+    </p>
+    
+    <dl>
+        <dt>
+            1. Toolbar
+        </dt>
+        <dd>
+            The toolbar at the top provides buttons for initiating a new publication and saving the current one.            
+        </dd>
+        <dt>
+            2. Publication title
+        </dt>
+        <dd>
+            The publication title is displayed below the toolbar. Click the title to edit it.            
+        </dd>
+        <dt>
+            3. Publication steps
+        </dt>
+        <dd>
+            Below the publication title, three steps guide you through the publishing process:            
+            <ul>
+                <li><b>Step 1:</b>  Select the form you want to publish.</li>
+                <li><b>Step 2 (Optional):</b>
+                    Choose a form action that you have defined for this form. This form action will be executed for each response.                    
+                </li>
+                <li><b>Step 3:</b> Determine the target audience for this form.</li>
+            </ul>
+        </dd>
+    </dl>
+
+    <h3 id="acl-options">
+        ACL (Access Control List) Options        
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}        
+
+    <p>
+        The ACL options define who can access the published form. Figure {{ figure_counter }} depicts the three audience types available:        
+    </p>
+    
+    <div class="px-lg-3 py-2" id="acl-options-figure">
+        <img src="/assets/img/publish-forms/acl-options.png" class="img-fluid rounded mx-auto d-block" alt="ACL options">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: ACL options</h6>
+    </div>
+
+    <h3 id="acl-rules-for-members">
+        ACL Rules for Members        
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+
+    <p>
+        Figure {{ figure_counter }} showcases the ACL rules for organization members.
+        You can leave the pre-defined rules as they are or customize them to suit your specific requirements.        
+    </p>
+    
+    <div class="px-lg-3 py-2" id="acl-rules-for-members-figure">
+        <img src="/assets/img/publish-forms/member-acl-rules.png" class="img-fluid rounded mx-auto d-block" alt="ACL rules for memebrs">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: ACL rules for members</h6>
+    </div>
+
+    <h3 id="additional-notes">
+        Additional Notes
+    </h3>
+
+    <ul>
+        <li>The publishing wizard streamlines the process of publishing forms, making it easy to control access and ensure that your forms reach the intended audience.</li>
+        <li> The wizard's intuitive interface guides you through each step, providing clear instructions and options for customizing the publication settings.</li>
+        <li>By utilizing the publishing wizard, you can effectively manage form visibility and maintain data security while reaching the desired recipients.</li>
+    </ul>
+    
+</div>

@@ -154,7 +154,12 @@
                         <!--  Menus -->
                         <ul class="list-unstyled fw-normal pb-2 small">
                             <li>
-                                
+                                {% if page.url == "/publish-forms/overview.html" %}
+                                {% assign $is_active = true %}
+                                {% else %}
+                                {% assign $is_active = false %}
+                                {% endif %}                                
+                                <a href="/publish-forms/overview.html" class="bd-links-link d-inline-block rounded{% if $is_active %} active{% endif %}"{% if $is_active %} aria-current="page"{% endif %}>Overview</a>
                             </li>
                         </ul>                            
                     </li>
