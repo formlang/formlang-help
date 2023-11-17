@@ -1,18 +1,23 @@
 -*- mode: org; -*-
 
 * TODO 0.11. 0
-  - [ ] workflows
-
-* TODO 0.10.0
-  - [ ] form flows
-
-* TODO 0.9.0
   - [ ] View responses
-      
-* TODO 0.8.0
-  - [ ] Publish forms
     - [ ] Prepare assets
     - [ ] Writing
+
+* TODO 0.10.0
+  - [ ] workflows
+
+* TODO 0.9.0
+  - [ ] form flows
+    - [ ] Prepare assets
+    - [ ] Prepare examples
+    - [ ] Writing
+          
+* TODO 0.8.0
+  - [X] Publish forms
+    - [X] Prepare assets
+    - [X] Writing
 
 * TODO 0.7.0
   - [X] Create form actions
