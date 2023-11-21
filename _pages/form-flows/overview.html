@@ -1,0 +1,162 @@
+---
+title: Introduction to Form Flows
+layout: default
+slug: form-flows
+permalink: /form-flows/overview.html
+---
+
+<div class="bd-intro pt-2 ps-lg-2">
+    <div class="d-md-flex align-items-center justify-content-start mb-4">
+        <h1 class="bd-title" id="content">
+            Form Flows: Crafting Personalized Form Experiences
+        </h1>
+    </div>
+
+    <p class="bd-lead">
+        FormLang's form flow feature empowers you to seamlessly
+        combine multiple forms into a single, unified experience. This
+        approach not only streamlines the form-filling process but
+        also enables you to personalize the user journey by directing
+        respondents to different forms based on their responses to
+        previous questions.
+    </p>
+
+    <h3>Benefits of Form Flows</h3>
+
+    <ul>
+        <li>
+            <b>Streamlined Multi-Form Task</b>:
+            Form flows reduce the need to manage individual forms separately, by combining multiple forms into a cohesive workflow.
+        </li>
+        <li>
+            <b>Personalized User Experience</b>:
+            By guiding respondents to different forms based on their previous responses,
+            form flows provide a tailored experience that caters to their specific needs and preferences.
+        </li>
+        <li>
+            <b>Enhanced User Engagement</b>:
+            By eliminating the need for respondents to navigate through multiple forms independently,
+            form flows enhance user engagement and reduce the likelihood of form abandonment.
+        </li>
+    </ul>
+    <p>
+        The form flow workspace provides a user-friendly interface for designing and managing your form flows.
+        To access the workspace, go to Create a Form Flow in the {{ site.designApp }}.        
+    </p>
+    
+</div>
+
+<div class="bd-content ps-lg-2">
+
+    {% assign figure_counter = 0 %}
+    
+    <h3>
+        Form Flow Workspace
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+
+    <p>
+        The form flow workspace resembles the form action
+        workspace. In this workspace, you can easily drag and drop
+        forms to create the desired flow, define conditional branching
+        rules, and customize the overall user experience. 
+    </p>
+
+    <p>
+        As shown in Figure {{ figure_counter }}, the workspace consists of the following key features:
+    </p>
+    
+    <div class="px-lg-3 py-2" id="form-flow-workspace-figure">
+        <img src="/assets/img/form-flows/form-flow-workspace.png" class="img-fluid rounded mx-auto d-block" alt="Form flow workspace">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Form flow workspace</h6>
+    </div>
+
+    <dl>
+        <dt>
+            1. Toolbar
+        </dt>
+        <dd>
+            The toolbar at the top of the workspace has buttons for opening/creating a form flow, saving the form action, and redoing/undoing recent operations.
+        </dd>
+        <dt>
+            2. Form flow title
+        </dt>
+        <dd>
+            The form flow title is displayed below the toolbar. Click the title to edit it.
+        </dd>
+        <dt>
+            3. Node toolbox
+        </dt>
+        <dd>
+            The left node toolbox provides five types of nodes: 
+            <ul>
+                <li><b>Form node:</b> Represents a form.</li>
+                <li><b>Evaluation node:</b>Evaluates the form responses based on the evaluation rules you define.</li>
+                <li><b>Decision node:</b>Makes a decision based on the results of the evaluation.</li>
+                <li><b>Custom event node</b>: Triggers a custom event.</li>
+            </ul>
+
+            To create a node, drag it from the toolbox and drop it on the canvas. For more information about node types, see ... (todo).
+        </dd>
+        <dt>
+            4. Canvas
+        </dt>
+        <dd>
+            The canvas is the main workspace where you create and edit your form flows.
+        </dd>
+        <dt>
+            5. Property inspector
+        </dt>
+        <dd>
+            The property inspector allows you to edit the properties of the selected edge or node in the canvas.            
+        </dd>
+        
+    </dl>
+
+    <h3 id="validating-form-flows">
+        Validating Form Flows
+    </h3>
+
+    <p>
+        As a form action, a form flow is also represented as a
+        flowchart. Compared with the form action, a form flow does not
+        contain feedback node types.  The rules for validating form
+        actions apply to form flows as well. For more information, please go to the link.
+    </p>
+
+
+    <h3 id="publish-form-flows">
+        Publish Form Flows
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+
+    <p>
+        
+    </p>
+    
+    <div class="px-lg-3 py-2" id="publish-form-flow-wizard-figure">
+        <img src="/assets/img/form-flows/publish-form-flow-wizard.png" class="img-fluid rounded mx-auto d-block" alt="Publish form flow wizard">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Publish form flow wizard</h6>
+    </div>
+
+
+    <h3 id="form-flow-state-graph">
+        Form Flow State Graph
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}        
+
+    <p>
+        When a respondent visits a form flow, the respondent first sees the state graph for the form flow.
+        Figure {{ figure_counter }}
+    </p>
+
+    <div class="px-lg-3 py-2" id="form-acion-workspace-figure">
+        <img src="/assets/img/form-flows/form-flow-workspace.png" class="img-fluid rounded mx-auto d-block" alt="Form flow workspace">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Form flow workspace</h6>
+    </div>
+    
+
+</div>
