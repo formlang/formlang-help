@@ -1,3 +1,10 @@
+## 0.10.0 (November 22, 2023)
+  - todo
+  - New feature: form actions
+  - In progress: form flow
+  - form flow assets
+  - todo
+
 ## 0.9.0 (November 17, 2023)
   - Added the user guide for publishing forms
   - Merge branch 'main' of https://github.com/formlang/formlang-help
