@@ -7,12 +7,15 @@
 
 * TODO 0.10.0
   - [ ] workflows
+    - [ ] Prepare assets
+    - [ ] Writing
+  - [ ] Placehoder in emails
 
 * TODO 0.9.0
-  - [ ] form flows
-    - [ ] Prepare assets
-    - [ ] Prepare examples
-    - [ ] Writing
+  - [X] form flows
+    - [X] Prepare assets
+    - [X] Prepare examples
+    - [X] Writing
           
 * TODO 0.8.0
   - [X] Publish forms
