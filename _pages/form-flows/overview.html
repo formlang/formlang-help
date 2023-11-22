@@ -46,21 +46,53 @@ permalink: /form-flows/overview.html
     
 </div>
 
+
+<div class="bd-toc mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+    <button class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
+        On this page
+        
+        <svg class="bi d-md-none ms-2" aria-hidden="true">
+            <use xlink:href="#chevron-expand"></use>
+        </svg>
+    </button>
+    <strong class="d-none d-md-block h6 my-2 ms-3">On this page</strong>
+    <hr class="d-none d-md-block my-2 ms-3">
+    <div class="collapse bd-toc-collapse" id="tocContents">
+        <nav id="TableOfContents">
+            <ul>
+                <li>
+                    <a href="#form-flow-workspace">Form flow workspace</a>
+                </li>
+                <li>
+                    <a href="#validating-form-flows">Validating form flows</a>
+                </li>
+                <li>
+                    <a href="#publish-form-flows">Publishing form flows</a>
+                </li>
+                <li>
+                    <a href="#form-flow-state-graph">Form flow state graph</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
 <div class="bd-content ps-lg-2">
 
     {% assign figure_counter = 0 %}
     
-    <h3>
+    <h3 id="form-flow-workspace">
         Form Flow Workspace
     </h3>
 
     {% assign figure_counter = figure_counter | plus: 1 %}
 
     <p>
-        The form flow workspace resembles the form action
-        workspace. In this workspace, you can easily drag and drop
-        forms to create the desired flow, define conditional branching
-        rules, and customize the overall user experience. 
+        The form flow workspace provides a user-friendly interface for
+        designing and managing your form flows.  It closely resembles
+        the form action workspace, allowing you to drag and drop
+        forms, define conditional branching rules, and customize the
+        overall user experience.
     </p>
 
     <p>
@@ -77,7 +109,7 @@ permalink: /form-flows/overview.html
             1. Toolbar
         </dt>
         <dd>
-            The toolbar at the top of the workspace has buttons for opening/creating a form flow, saving the form action, and redoing/undoing recent operations.
+            The toolbar at the top of the workspace has buttons for opening/creating a form flow, saving the form flows, and redoing/undoing recent operations.
         </dd>
         <dt>
             2. Form flow title
@@ -119,22 +151,38 @@ permalink: /form-flows/overview.html
     </h3>
 
     <p>
-        As a form action, a form flow is also represented as a
-        flowchart. Compared with the form action, a form flow does not
-        contain feedback node types.  The rules for validating form
-        actions apply to form flows as well. For more information, please go to the link.
+        Form flows, like form actions, are represented as
+        flowcharts. However, form flows do not contain feedback node
+        types. The same validation rules that apply to form actions
+        also apply to form flows. For more information, please refer
+        to <a href="/form-actions/overview.html#validating-form-actions">form actions</a>.
     </p>
 
 
     <h3 id="publish-form-flows">
-        Publish Form Flows
+        Publishing Form Flows
     </h3>
 
     {% assign figure_counter = figure_counter | plus: 1 %}
 
     <p>
-        
+        To publish a form flow, navigate to the <code>Publish a Form Flow
+        option</code> within the {{ site.designApp }}. Click the Start button
+        on the cover page to launch the publishing wizard,
+        as shown in Figure {{ figure_counter }}.
     </p>
+
+    <p>
+        The publishing wizard for form flows is similar to the one for forms, but with two key distinctions:
+    </p>
+    <ul>
+        <li>
+            <b>Form Action Step</b>: The form flow wizard doesn't include the step for selecting a form action, as form actions are not applicable to form flows.            
+        </li>
+        <li>
+            <b>Target Audience</b>: Form flows can only be targeted to visitors or authorized users, unlike forms that can also be made publicly accessible.            
+        </li>
+    </ul>
     
     <div class="px-lg-3 py-2" id="publish-form-flow-wizard-figure">
         <img src="/assets/img/form-flows/publish-form-flow-wizard.png" class="img-fluid rounded mx-auto d-block" alt="Publish form flow wizard">
@@ -149,13 +197,23 @@ permalink: /form-flows/overview.html
     {% assign figure_counter = figure_counter | plus: 1 %}        
 
     <p>
-        When a respondent visits a form flow, the respondent first sees the state graph for the form flow.
-        Figure {{ figure_counter }}
+        When you access a form flow, a state graph, as shown in Figure
+        {{ figure_counter }}, is displayed, representing the status of
+        each form within the flow. Nodes in green indicate forms for
+        which responses have been submitted, while gray nodes
+        represent forms that still need to be completed.
+    </p>
+    
+    <p>
+        To work on a form, click its corresponding node. A dialog will
+        appear, informing you whether you can proceed based on the
+        evaluation rules. If not, you may need to complete other forms
+        first or may not be required to work on that particular form.
     </p>
 
-    <div class="px-lg-3 py-2" id="form-acion-workspace-figure">
-        <img src="/assets/img/form-flows/form-flow-workspace.png" class="img-fluid rounded mx-auto d-block" alt="Form flow workspace">
-        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Form flow workspace</h6>
+    <div class="px-lg-3 py-2" id="form-flow-state-graph-figure">
+        <img src="/assets/img/form-flows/form-flow-state-graph.png" class="img-fluid rounded mx-auto d-block" alt="Form flow state graph">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Form flow state graph</h6>
     </div>
     
 
