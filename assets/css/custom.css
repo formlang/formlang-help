@@ -1,0 +1,11 @@
+.bd-content>.table tbody tr td[rowspan]:first-child,
+.bd-content>.table-responsive .table tbody tr td[rowspan]:first-child {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bd-content>.table tbody tr td:2nd-child,
+.bd-content>.table-responsive .table tbody tr td:2nd-child {
+    text-transform: capitalize;
+}
+
