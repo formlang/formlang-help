@@ -61,6 +61,9 @@ permalink: /events-and-subscriptions/overview.html
                 <li>
                     <a href="#workflows">Workflows</a>
                 </li>
+                <li>
+                    <a href="#master-placeholders">Personalize subscription messages with placeholders</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -175,5 +178,265 @@ permalink: /events-and-subscriptions/overview.html
     <!-- <p>
          Learn more: <a href="#">Notification instructions for workflows</a>
          </p> -->
+
+    <h3 id="master-placeholders">Mastering Placeholders: Guide to Personalized Subscription Messages</h3>
+
+    <p>
+        When crafting subscription messages, you can sprinkle in
+        special placeholders that automatically transform into
+        relevant content like recipient names, email addresses, and link details.
+        The table below provides you with a comprehensive list of all valid placeholders available for use. 
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td rowspan="4">Recipient</td>
+                    <td class="placeholder-property-label">first name</td>
+                    <td>
+                        <span>{Receiver.FirstName}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Receiver.FirstName}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="placeholder-property-label">last name</td>                
+                    <td>
+                        <span>{Receiver.LastName}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Receiver.LastName}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="placeholder-property-label">full name</td>
+                    <td>
+                        <span>{Receiver.FullName}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Receiver.FullName}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="placeholder-property-label">email</td>
+                    <td>
+                        <span>{Receiver.Email}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Receiver.Email}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Organization member</td>
+                    <td class="placeholder-property-label">first name</td>                
+                    <td>
+                        <span>{Member.FirstName}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Member.FirstName}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="placeholder-property-label">last name</td>                                
+                    <td>
+                        <span>{Member.LastName}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Member.LastName}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>                
+                </tr>
+                <tr>
+                    <td class="placeholder-property-label">full name</td>
+                    <td>
+                        <span>{Member.FullName}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Member.FullName}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="placeholder-property-label">email</td>                
+                    <td>
+                        <span>{Member.Email}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Member.Email}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Respondent</td>
+                    <td class="placeholder-property-label">first name</td>                
+                    <td>
+                        <span>{Respondent.FirstName}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Respondent.FirstName}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="placeholder-property-label">last name</td>                                                
+                    <td>
+                        <span>{Respondent.LastName}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Respondent.LastName}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>                
+                </tr>
+                <tr>
+                    <td class="placeholder-property-label">full name</td>                                
+                    <td>
+                        <span>{Respondent.FullName}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Respondent.FullName}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="placeholder-property-label">email</td>                                
+                    <td>
+                        <span>{Respondent.Email}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Respondent.Email}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>                
+                </tr>
+                <tr>
+                    <td rowspan="1">Response</td>
+                    <td class="placeholder-property-label">Link</td>
+                    <td>
+                        <span>{Response.Link}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Response.Link}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>                
+                </tr>
+                <tr>
+                    <td rowspan="2">Form</td>
+                    <td class="placeholder-property-label">Title</td>
+                    <td>
+                        <span>{Form.Title}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Form.Title}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="placeholder-property-label">custom event</td>
+                    <td>
+                        <span>{Form.CustomEvent}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Form.CustomEvent}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>                
+                </tr>
+                <tr>
+                    <td rowspan="2">Workflow</td>
+                    <td class="placeholder-property-label">Title</td>
+                    <td>
+                        <span>{Workflow.Title}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{Workflow.Title}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="placeholder-property-label">Link</td>
+                    <td>
+                        <span>{Workflow.Link}</span>
+                        <button type="button" class="btn btn-link copy-to-clipboard"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Copied"
+                                data-bs-trigger="focus"
+                                data-bs-delay='{"show":0,"hide":250}'
+                                data-clipboard-text="{workflow.Link}">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </td>                
+                </tr>
+            </tbody>
+        </table>
+    </div>
     
 </div>

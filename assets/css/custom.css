@@ -4,8 +4,10 @@
     text-align: center;
 }
 
-.bd-content>.table tbody tr td:2nd-child,
-.bd-content>.table-responsive .table tbody tr td:2nd-child {
+.bd-content>.table tbody tr td.placeholder-property-label,
+.bd-content>.table-responsive .table tbody tr td.placeholder-property-label {
     text-transform: capitalize;
+    vertical-align: middle;
+    text-align: center;
 }
 
