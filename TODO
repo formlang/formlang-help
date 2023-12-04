@@ -1,15 +1,15 @@
 -*- mode: org; -*-
 
 * TODO 0.11. 0
+  - [ ] workflows
+    - [ ] Prepare assets
+    - [ ] Writing
   - [ ] View responses
     - [ ] Prepare assets
     - [ ] Writing
 
 * TODO 0.10.0
-  - [ ] workflows
-    - [ ] Prepare assets
-    - [ ] Writing
-  - [ ] Placehoder in emails
+  - [X] Placehoder in emails
 
 * TODO 0.9.0
   - [X] form flows
