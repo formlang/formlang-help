@@ -1,3 +1,7 @@
+## 0.11.0 (December 04, 2023)
+  - Document the placeholders in the subscription messages
+  - In progress
+
 ## 0.10.0 (November 22, 2023)
   - todo
   - New feature: form actions
