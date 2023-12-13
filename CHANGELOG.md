@@ -1,3 +1,10 @@
+## 0.12.0 (December 13, 2023)
+  - Fixed a link bug
+  - new feature: workflow
+  - todo
+  - Prepared the image asets for workflow
+  - todo
+
 ## 0.11.0 (December 04, 2023)
   - Document the placeholders in the subscription messages
   - In progress
