@@ -1,0 +1,136 @@
+---
+title: Introduction to Workflows
+layout: default
+slug: workflows
+permalink: /workflows/overview.html
+---
+
+<div class="bd-intro pt-2 ps-lg-2">
+    <div class="d-md-flex align-items-center justify-content-start mb-4">
+        <h1 class="bd-title" id="content">
+            Level Up Your Productivity: Introducing Workflows
+        </h1>
+    </div>
+
+    <p class="bd-lead">
+        Tired of repetitive form publishing and missed reminders?
+        Workflows are your personal assistants, automatically publishing your forms on time and keeping everyone on track. No more wasted time or forgotten tasks - let workflows handle the routine while you focus on what drives your success.
+    </p>
+
+    <p>
+        <strong>Imagine this</strong>: Every Monday, a fresh form magically appears for your team. No more manual setup. You simply glance at the responses and see who's lagging behind. Easy, right?
+    </p>
+
+    <p>
+        That's the power of workflows. With our intuitive wizard, crafting these automated assistants is a breeze. No coding. 
+    </p>
+
+    <p>
+        Ready to unlock a new level of efficiency? Dive into this guide to discover how workflows can transform your work!
+    </p>
+
+    
+</div>
+
+<div class="bd-toc mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+    <button class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
+        On this page
+        
+        <svg class="bi d-md-none ms-2" aria-hidden="true">
+            <use xlink:href="#chevron-expand"></use>
+        </svg>
+    </button>
+    <strong class="d-none d-md-block h6 my-2 ms-3">On this page</strong>
+    <hr class="d-none d-md-block my-2 ms-3">
+    <div class="collapse bd-toc-collapse" id="tocContents">
+        <nav id="TableOfContents">
+            <ul>
+                <li>
+                    <a href="#workflow-wizard">Workflow wizard</a>
+                </li>
+                <li>
+                    <a href="#workflow-schedule-step">Craft Your Workflow's Execution Plan</a>
+                </li>
+                <li>
+                    <a href="#workflow-finalized-step">workflow-finalized-step</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="bd-content ps-lg-2">
+
+    {% assign figure_counter = 0 %}
+
+    <h3 id="workflow-wizard">
+        Workflow wizard
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+
+    <p>
+        The workflow wizard is accessible through the Create a
+        Workflow option in {{ site.designApp }}. It's a three-step
+        process, as you'll see in Figure {{ figure_counter }} below.
+    </p>
+
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/workflows/workflow-wizard.png" class="img-fluid rounded mx-auto d-block" alt="Workflow wizard">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Workflow wizard</h6>
+    </div>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+    
+    <p>
+        In the first step, you'll pick a publication to serve as the
+        foundation for your workflow. Don't worry, your existing
+        publication won't be affected! You can choose an existing
+        publication for a form or form flow, or create a new one
+        tailored to your needs and target audience.
+        Figure {{ figure_counter }} shows a workflow with the chosen publication highlighted.
+    </p>
+    
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/workflows/selected-pub-example-for-workflow.png" class="img-fluid rounded mx-auto d-block" alt="workflow wizard with selected publication">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Workflow wizard with the selected publication</h6>
+    </div>
+
+    
+    <h3 id="workflow-schedule-step">
+        Craft Your Workflow's Execution Plan
+    </h3>
+
+    {% assign figure_counter = figure_counter | plus: 1 %}
+
+    <p>
+        Take charge of your workflow's timing in step two! Schedule it
+        for a single execution on a specific date and time, or set it
+        to repeat daily, weekly, or monthly based on your needs. Want
+        more control? Exclude specific dates from recurring schedules
+        or define an end date. Plus, you can pause and resume your
+        workflow anytime for ultimate flexibility.
+    </p>
+    
+    <div class="px-lg-3 py-2">
+        <img src="/assets/img/workflows/scheduling-pub-step-for-workflow.png" class="img-fluid rounded mx-auto d-block" alt="Workflow exeuction plan">
+        <h6 class="text-center mt-3">Figure {{ figure_counter }}: Crafting workflow's execution plan</h6>
+    </div>
+
+    <h3 id="workflow-finalized-step">
+        Finalize Your Workflow and Unlock Its Power!        
+    </h3>
+
+    <p>
+        Give your workflow a name and optional description to easily
+        identify it later. Hit the save button, and you're ready to
+        unleash its full potential! 
+    </p>
+    <p>
+        Further, you can start to create subscriptions,
+        tailored to your specific needs, and watch your automated
+        tasks come to life. For detailed guidance on subscription
+        creation, refer to our handy <a href="/events-and-subscriptions.overview.html#workflows">event and subscription guide</a>.
+    </p>
+    
+</div>
