@@ -1,5 +1,20 @@
 -*- mode: org; -*-
 
+* TODO SEO
+  - [X] Home page 
+  - [X] Start page
+  - [ ] Form
+    - [ ] Overview
+    - [ ] Create forms
+    - [ ] Create questions
+    - [ ] Create data flows
+  - [ ] Form action
+  - [ ] Pubish forms
+  - [ ] Form Flows
+  - [ ] Workflows
+  - [ ] Settings
+  - [ ] Events and subscriptions
+
 * TODO 0.11. 0
   - [X] workflows
     - [X] Prepare assets
