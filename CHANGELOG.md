@@ -1,3 +1,12 @@
+## 0.13.0 (May 06, 2024)
+  - Updated forms
+  - updated create questions page
+  - Updated forms overview page for SEO
+  - todo
+  - Fixed issues on using special characters in FormLang
+  - Update start page
+  - Working on SEO
+
 ## 0.12.0 (December 13, 2023)
   - Fixed a link bug
   - new feature: workflow
