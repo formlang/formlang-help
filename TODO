@@ -1,8 +1,8 @@
 -*- mode: org; -*-
 
 * TODO SEO
-  - [X] Home page 
-  - [X] Start page
+  - [ ] Home page 
+  - [ ] Start page
   - [X] Form
     - [X] Overview
     - [X] Create forms
@@ -13,7 +13,7 @@
   - [X] Form Flows
   - [X] Workflows
   - [X] Settings
-  - [ ] Events and subscriptions
+  - [X] Events and subscriptions
 
 * TODO 0.11. 0
   - [X] workflows
