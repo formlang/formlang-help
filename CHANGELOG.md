@@ -1,3 +1,6 @@
+## 0.15.0 (May 07, 2024)
+  - Added sitemap
+
 ## 0.14.0 (May 07, 2024)
   - Fixed URL
   - Fixed URL
