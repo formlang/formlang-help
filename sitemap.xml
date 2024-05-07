@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://help.formlang.com/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://help.formlang.com/start/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://help.formlang.com/settings/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://help.formlang.com/events-and-subscriptions/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://help.formlang.com/forms/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://help.formlang.com/forms/create-forms/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://help.formlang.com/forms/create-questions/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://help.formlang.com/forms/create-dataflows/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://help.formlang.com/form-actions/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://help.formlang.com/publish-forms/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://help.formlang.com/form-flows/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://help.formlang.com/workflows/</loc>
+  <lastmod>2024-05-07T09:19:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
