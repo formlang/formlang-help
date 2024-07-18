@@ -1,5 +1,8 @@
 -*- mode: org; -*-
 * TODO 0.15.0
+  - [ ] Framework
+    - [ ] Remove search bar 
+    - [ ] Implement search ...
   - [X] Home page 
   - [ ] Getting started
     - [ ] Introduction
