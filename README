@@ -2,10 +2,34 @@
 
 ## Building development environment
 
+Note that we use the root priviledge to install the packages below.
+
+To prevent any issue from different versions of Ruby, use rbenv to manage the versions:
+
 ```
-gem install jekyll bundler
+brew install rbenv ruby-build
+echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Then install ruby
+```
+rbenv install 3.2.3
+rbenv local 3.2.3
+(or rbenv global 3.2.3)
+ruby -v
+```
+
+Next, install bundler
+```
+gem install bundler
+```
+
+Finally, 
+```
 git clone ... formlang_help
 cd formlang_help
+bundle install
 ```
 
 ## Local development 
