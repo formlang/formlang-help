@@ -583,11 +583,11 @@
 }
 
 :root,[data-bs-theme="light"] {
-    --bd-primary: #0d6efd;    
+    --bd-primary: #004a77;
     --bd-purple: #4c0bce;
     --bd-violet: #712cf9;
     --bd-accent: #ffe484;
-    --bd-primary-rgb: 13, 110, 253;    
+    --bd-primary-rgb: 0, 74, 119;
     --bd-violet-rgb: 112.520718,44.062154,249.437846;
     --bd-accent-rgb: 255,228,132;
     --bd-white-rgb: 255, 255, 255;    
