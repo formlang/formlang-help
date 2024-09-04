@@ -1,3 +1,22 @@
+## 1.0.0 (September 04, 2024)
+  - footer
+  - Home page
+  - Home page
+  - Merge branch 'project-phoenix/homepage-redesign' of https://github.com/formlang/formlang-help into project-phoenix/homepage-redesign
+  - In progress
+  - Home page
+  - Theme
+  - Updated assets
+  - k
+  - k
+  - Home page
+  - k
+  - Hero section
+  - Updated README
+  - Ruby version
+  - todo
+  - todo
+
 ## 0.15.0 (May 07, 2024)
   - Added sitemap
 
