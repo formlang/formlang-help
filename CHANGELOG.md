@@ -1,3 +1,7 @@
+## 1.0.2 (September 04, 2024)
+  - Merge remote-tracking branch 'origin/project-phoenix/homepage-redesign'
+  - text light
+
 ## 1.0.1 (September 04, 2024)
   - Merge remote-tracking branch 'origin/project-phoenix/homepage-redesign'
   - k
