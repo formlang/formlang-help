@@ -11,3 +11,17 @@
     text-align: center;
 }
 
+
+section {
+    padding: 5rem 0; /* Adjust padding as needed */
+}
+
+.hero {
+  text-align: center; /* Center content on smaller screens */
+}
+
+@media (min-width: 992px) { /* Adjust breakpoint as needed */
+  .hero {
+    text-align: left; /* Left-align content on larger screens */
+  }
+}
