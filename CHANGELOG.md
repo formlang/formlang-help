@@ -1,3 +1,9 @@
+## 1.0.1 (September 04, 2024)
+  - Merge remote-tracking branch 'origin/project-phoenix/homepage-redesign'
+  - k
+  - Merge remote-tracking branch 'origin/project-phoenix/homepage-redesign'
+  - footer
+
 ## 1.0.0 (September 04, 2024)
   - footer
   - Home page
