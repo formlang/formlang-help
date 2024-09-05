@@ -12,16 +12,21 @@
 }
 
 
-section {
-    padding: 5rem 0; /* Adjust padding as needed */
+@media (min-width: 768px) { 
+    section {
+        padding: 5rem 0; 
+    }
+    footer {
+        padding: 5rem 0; 
+    }
 }
 
 .hero {
-  text-align: center; /* Center content on smaller screens */
+    text-align: center; /* Center content on smaller screens */
 }
 
-@media (min-width: 992px) { /* Adjust breakpoint as needed */
-  .hero {
-    text-align: left; /* Left-align content on larger screens */
-  }
+@media (min-width: 992px) { 
+    .hero {
+        text-align: left; 
+    }
 }
