@@ -1,3 +1,8 @@
+## 1.0.3 (September 05, 2024)
+  - Improved footer
+  - Switched to use test credential
+  - Renaming
+
 ## 1.0.2 (September 04, 2024)
   - Merge remote-tracking branch 'origin/project-phoenix/homepage-redesign'
   - text light
