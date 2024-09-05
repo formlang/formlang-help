@@ -548,16 +548,16 @@
         return;
     const t = e.getAttribute("data-bd-docs-version");
     window.docsearch({
-        apiKey: "3151f502c7b9e9dafd5e6372b691a24e",
-        indexName: "bootstrap",
-        appId: "AK7KMZKZHQ",
+        apiKey: "599cec31baffa4868cae4e79f180729b",
+        indexName: "docsearch",
+        appId: "R2IYF7ETH7",
         container: e,
         searchParameters: {
             facetFilters: [`version:${t}`]
         },
         transformItems(e) {
             return e.map(e => {
-                const t = "https://getbootstrap.com/";
+                const t = "https://help.formlang.com/";
                 return e.url = window.location.origin.startsWith(t) ? e.url : e.url.replace(t, "/"),
                 e.anchor === "content" && (e.url = e.url.replace(/#content$/, ""),
                 e.anchor = null),
