@@ -552,9 +552,12 @@
         indexName: "help-formlang",
         appId: "AZMYS1SFOW",
         container: e,
+        debug: false,
+        /*        
         searchParameters: {
             facetFilters: [`version:${t}`]
-        },
+        }, */
+
         transformItems(e) {
             return e.map(e => {
                 const t = "https://help.formlang.com/";
@@ -564,7 +567,7 @@
                 e
             }
             )
-        }
+        } 
     })
 }
 )(),
