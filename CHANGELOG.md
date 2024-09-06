@@ -1,3 +1,8 @@
+## 1.0.4 (September 06, 2024)
+  - Replaced the Api key for the doc search
+  - Merge branch 'project-phoenix/homepage-redesign'
+  - Refine the copy icon
+
 ## 1.0.3 (September 05, 2024)
   - Improved footer
   - Switched to use test credential
