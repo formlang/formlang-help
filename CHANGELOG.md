@@ -1,3 +1,8 @@
+## 1.0.5 (September 06, 2024)
+  - Fixed the toggler in the home page
+  - Fixed searchbar
+  - bumped version
+
 ## 1.0.4 (September 06, 2024)
   - Replaced the Api key for the doc search
   - Merge branch 'project-phoenix/homepage-redesign'
