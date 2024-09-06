@@ -548,9 +548,9 @@
         return;
     const t = e.getAttribute("data-bd-docs-version");
     window.docsearch({
-        apiKey: "599cec31baffa4868cae4e79f180729b",
-        indexName: "docsearch",
-        appId: "R2IYF7ETH7",
+        apiKey: "55d1cda162026cf805306ec6f340a027",
+        indexName: "help-formlang",
+        appId: "AZMYS1SFOW",
         container: e,
         searchParameters: {
             facetFilters: [`version:${t}`]
