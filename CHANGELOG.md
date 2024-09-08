@@ -1,3 +1,14 @@
+## 1.0.7 (September 08, 2024)
+  - Publish forms
+  - creat form
+  - Use glightbox
+  - Merge branch 'main' of https://github.com/formlang/formlang-help
+  - Custom js
+  - Removed vendors
+  - Configure glightbox
+  - glightbox
+  - Bumped version
+
 ## 1.0.6 (September 08, 2024)
   - Fixed images
   - Updated assets
