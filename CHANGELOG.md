@@ -1,3 +1,7 @@
+## 1.0.6 (September 08, 2024)
+  - Fixed images
+  - Updated assets
+
 ## 1.0.5 (September 06, 2024)
   - Fixed the toggler in the home page
   - Fixed searchbar
