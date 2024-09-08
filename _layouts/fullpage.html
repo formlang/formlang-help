@@ -29,41 +29,6 @@
         <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js" integrity="sha256-pDrSUa13vOne5uuB/pSUdT2vNTXsq1i4vtm/xpqJX9w=" crossorigin="anonymous"></script>
-
-        <script>
-         window.onload = function() {
-             const initFunc = function() {
-                 const clipboard = new ClipboardJS('.btn.copy-to-clipboard');
-                 clipboard.on('success', function(e) {
-                     e.clearSelection();
-                 });
-             };
-             
-             initFunc();
-
-             const swiper = new Swiper('.swiper', {
-                 // Optional parameters
-                 loop: true,
-                 lazy: true,
-                 zoom: true,
-
-                 // If we need pagination
-                 pagination: {
-                     el: '.swiper-pagination',
-                 },
-
-                 // Navigation arrows
-                 navigation: {
-                     nextEl: '.swiper-button-next',
-                     prevEl: '.swiper-button-prev',
-                 },
-
-                 // And if we need scrollbar
-                 scrollbar: {
-                     el: '.swiper-scrollbar',
-                 },
-             });
-         };
-        </script>
+        <script src="/assets/js/custom.js"></script>
     </body>
 </html>
