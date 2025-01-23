@@ -1,3 +1,11 @@
+## 1.1.0 (January 23, 2025)
+  - Included tutor
+  - visitorhub mobile app
+  - formlang connect app
+  - Tutor page
+  - Updated copyright
+  - Bumped version
+
 ## 1.0.8 (September 19, 2024)
   - Fixed links
 
