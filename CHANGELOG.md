@@ -1,3 +1,7 @@
+## 1.1.1 (January 23, 2025)
+  - Minor update
+  - Updated sitemap
+
 ## 1.1.0 (January 23, 2025)
   - Included tutor
   - visitorhub mobile app
